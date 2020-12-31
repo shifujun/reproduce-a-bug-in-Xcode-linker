@@ -1,4 +1,4 @@
-## reproduce a bug in Xcode linker
+## reproduce a bug in Xcode linker ![Test on CI](https://github.com/shifujun/reproduce-a-bug-in-Xcode-linker/workflows/Test%20on%20CI/badge.svg)
 
 This is a bug happened in our real project. This repo reproduce it with stub files.
 
@@ -30,3 +30,6 @@ clang: error: linker command failed with exit code 1 (use -v to see invocation)
 ```
 
 Notice that `argument missing after -force_load` and `file not found: -filelist` are both not expected error.
+
+### reproduce on Github Actions
+https://github.com/shifujun/reproduce-a-bug-in-Xcode-linker/runs/1628934742?check_suite_focus=true
