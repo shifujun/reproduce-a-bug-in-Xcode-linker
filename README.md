@@ -33,3 +33,7 @@ Notice that `argument missing after -force_load` and `file not found: -filelist`
 
 ### reproduce on Github Actions
 https://github.com/shifujun/reproduce-a-bug-in-Xcode-linker/runs/1628934742?check_suite_focus=true
+
+### Feedback to Apple
+https://feedbackassistant.apple.com/feedback/8957741
+
