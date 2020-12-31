@@ -1,0 +1,23 @@
+name: Test on CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  test:
+    runs-on: macos-latest
+    steps:
+      - uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: '12.2'
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: check Xcode version
+        run: xcodebuild -version
+      - name: expect result
+        run: ./build.sh $(./stub.sh /abc) 2>&1 | tail -n 3
+      - name: actual result
+        run: ./build.sh $(./stub.sh /workspace/p-a40c117861104f0aa2e5831e9f5c93d1) 2>&1 | tail -n 3

@@ -1,0 +1,604 @@
+TempDir=$1
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ \
+ -target x86_64-apple-ios9.0-simulator \
+ -dynamiclib \
+ -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.2.sdk \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/AntiRobot \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/CocoaHotReload \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/CommentsPublisher \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/DispatchCatch \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/ET \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/ExcitingTransfer \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/FLEX \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/GAImage \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/GCDanmuKit \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/GCHybirdComponentKit \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/GCLiveGiftKit \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/GCLivePlayerKit \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/GameContentLiveSDK \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/H5NativeMixView \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/JCEProtocol \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/LGRichTextKit \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/MQZDraftBox \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/MVTabBarController \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/NativeVueSDK \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/LdwLiveSDK \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/PolyPraise \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/QBar \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/QLogSDK \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/QProtobufCodec-iOS9.0 \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/VVCirDataCache \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/VVModelObject \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/VVVideoChatModule \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/QRouter \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/QZAR \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/QZLRUImageCache \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/QZPhotoCore \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/QZVideoPlayer \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/QzoneFoundation \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/RAAnnotation \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/RABuiltinServiceAssembly \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/RAFT \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/RIJBaseUtils \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/ReportMonitor \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/RightPlayer \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/ServiceManager \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/TKCSDK \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/TKDContentComponent \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/TKPCommonUtils \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/TKPImagePicker \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/TKPRichTextView \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/TKPSimplifiedYYText \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/TKPVideoCoverImage \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/TKPublisher \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/TNFProtocol \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/TTTReportSDK \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/TitanFeedSDK \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/Tuxiaochao \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/UmbreonSDK \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/UploadLib \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/WXVoiceSDK \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/WeiyunSDK \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/Wezone \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/YYModel \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/brick \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/gameplay \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/hippy \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/iCarousel \
+ -L$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/tkdad-hippy-sdk \
+ -L$TempDir/src/VVMainProject/../Pods/../Classes/base/VVRelation/Pod_Framework \
+ -L$TempDir/src/VVMainProject/../Pods/CocoaHotReload/CocoaHotReload/ThirdUitlities/Dobby/lib \
+ -L$TempDir/src/VVMainProject/../Pods/GLive \
+ -L$TempDir/src/VVMainProject/../Pods/MidasForVV \
+ -L$TempDir/src/VVMainProject/../Pods/StoryLdwLive \
+ -L$TempDir/src/VVMainProject/../Pods/UFOSdk \
+ -L$TempDir/src/VVMainProject/../Pods/VoiceRecognizeEmbed_SDK \
+ -L$TempDir/src/VVMainProject/../Pods/Weibo_SDK/libWeiboSDK \
+ -L$TempDir/src/VVMainProject/../Pods/XVEngine_iOS \
+ -L$TempDir/src/VVMainProject/../Pods/brick \
+ -L$TempDir/src/VVMainProject/../Pods/libgameplayBusiness \
+ -L$TempDir/src/VVMainProject/../Classes/module/SmartDevice/Libs \
+ -L$TempDir/src/VVMainProject/../Classes/module/ApplePay/lib \
+ -L$TempDir/src/VVMainProject/../Pods/iupSDK \
+ -L$TempDir/src/VVMainProject/../Pods/VVLogMmap \
+ -L$TempDir/src/VVMainProject/../Pods/dbfix_ios \
+ -L$TempDir/src/VVMainProject/../Frameworks/BuglyOA-Crash \
+ -L$TempDir/src/VVMainProject/../Pods/VVRetainCycleDetector \
+ -L$TempDir/src/VVMainProject/../Frameworks/Beacon \
+ -L$TempDir/src/VVMainProject/../Pods/Ana \
+ -L$TempDir/src/VVMainProject/../Frameworks/PayCenterSDK \
+ -L$TempDir/src/VVMainProject/../Frameworks/QMusic \
+ -L$TempDir/src/VVMainProject/../Frameworks/GLive \
+ -L$TempDir/src/VVMainProject/../Frameworks/QLog \
+ -L$TempDir/src/VVMainProject/../Frameworks/GDTADSDK \
+ -L$TempDir/src/VVMainProject/../Pods/YTOpencv \
+ -L$TempDir/src/VVMainProject/../Pods/YTCommon/Frameworks \
+ -L$TempDir/src/VVMainProject/../Pods/RapidNet/Frameworks \
+ -L$TempDir/src/VVMainProject/../Frameworks/vasscupdate \
+ -L$TempDir/src/VVMainProject/../Pods/ILive \
+ -L$TempDir/src/VVMainProject/VVCatalyst/PTLogin \
+ -L$TempDir/src/VVMainProject/../Pods/TAIDSDK \
+ -L$TempDir/src/VVMainProject/../Pods/beacon \
+ -L$TempDir/src/VVMainProject/../Frameworks/quiclib \
+ -L$TempDir/src/VVMainProject/../Pods/Headers/Public/SDKVendor_iOS \
+ -F$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator \
+ -F$TempDir/src/VVMainProject/../Pods/ChannelReport \
+ -F$TempDir/src/VVMainProject/../Pods/LookinServer \
+ -F$TempDir/src/VVMainProject/../Pods/QBar \
+ -F$TempDir/src/VVMainProject/../Pods/libpag/pag-ios/framework/full \
+ -F$TempDir/src/VVMainProject/GCLiveKit/../Frameworks/GroupCommon/GroupCommon.xcframework/ios-armv7_arm64/ \
+ -F/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks \
+ -F$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator \
+ -F$TempDir/src/VVMainProject \
+ -F$TempDir/src/VVMainProject/.. \
+ -F$TempDir/src/VVMainProject/../Classes/base \
+ -F$TempDir/src/VVMainProject/../Classes/base/Media/Audio/VVAmr \
+ -F$TempDir/src/VVMainProject/../Classes/base/Media/Audio/VoiceChanger \
+ -F$TempDir/src/VVMainProject/../Classes/base/UI/public/QBWebView \
+ -F$TempDir/src/VVMainProject/../Classes/engine/VV/PTT/silk/voicemessagedenoise/ios \
+ -F$TempDir/src/VVMainProject/../Classes/extern/libjpeg-turbo/lib/debug \
+ -F$TempDir/src/VVMainProject/../Classes/extern/libSISDKLib \
+ -F$TempDir/src/VVMainProject/../Classes/extern/M2MEngine/thirdpartlib \
+ -F$TempDir/src/VVMainProject/../Classes/extern/Ldw \
+ -F$TempDir/src/VVMainProject/../Classes/extern/opencv2 \
+ -F$TempDir/src/VVMainProject/../Classes/extern/ufa \
+ -F$TempDir/src/VVMainProject/../Classes/extern/WeChat \
+ -F$TempDir/src/VVMainProject/../Classes/module/ApplePay/lib \
+ -F$TempDir/src/VVMainProject/../Classes/module/PhotoEdit/Filter/thirdParty \
+ -F$TempDir/src/VVMainProject/../Frameworks/MapGameBasic \
+ -F$TempDir/src/VVMainProject/../Classes/module/VVDynamicframeworks \
+ -F$TempDir/src/VVMainProject/../Classes/module/VVQRCode/Lib/QBar \
+ -F$TempDir/src/VVMainProject/../Classes/module/VVWallet/lib \
+ -F$TempDir/src/VVMainProject/../Classes/module/Rio/ARFaceRecog \
+ -F$TempDir/src/VVMainProject/../Classes/module/SmartDevice/Libs \
+ -F$TempDir/src/VVMainProject/../Classes/module/TlibDy \
+ -F$TempDir/src/VVMainProject/../Pods/APMEngine/APMEngine.xcframework/ios-armv7_arm64 \
+ -F$TempDir/src/VVMainProject/../Pods/PTS/iOS/PTS.xcframework/ios-armv7_arm64 \
+ -F$TempDir/src/VVMainProject/../Pods/Proteus/Framework/Release/Proteus.xcframework/ios-arm64_armv7 \
+ -F$TempDir/src/VVMainProject/../Pods/gwnzwngLBS/gwnzwngLBS.xcframework/ios-armv7_arm64 \
+ -F$TempDir/src/VVMainProject/../Pods/ufaYT_SDK \
+ -F$TempDir/src/VVMainProject/../Pods/AlphaAr \
+ -F$TempDir/src/VVMainProject/../Pods/ArkEngine \
+ -F$TempDir/src/VVMainProject/../Pods/TAVCut \
+ -F$TempDir/src/VVMainProject/../Pods/TAVKit-Framework \
+ -F$TempDir/src/VVMainProject/../Pods/TAVStickerKit-Framework/TAVStickerKit \
+ -F$TempDir/src/VVMainProject/../Pods/TAVTimelineKit-Framework/TAVTimelineKit \
+ -F$TempDir/src/VVMainProject/../Pods/VVVideoEffectFilters \
+ -F$TempDir/src/VVMainProject/../Pods/VideoRecorder \
+ -F$TempDir/src/VVMainProject/../Pods/TCGPUImage \
+ -F$TempDir/src/VVMainProject/../Pods/LightSDK/LightSDK \
+ -F$TempDir/src/VVMainProject/../Pods/AEBase/AEBase \
+ -F$TempDir/src/VVMainProject/../Pods/AECore/AECore \
+ -F$TempDir/src/VVMainProject/../Pods/AEKit3DEngine/AEKit3DEngine \
+ -F$TempDir/src/VVMainProject/../Pods/libpag/pag-ios/framework/full \
+ -F$TempDir/src/VVMainProject/../Pods/YTOpencv \
+ -F$TempDir/src/VVMainProject/../Pods/YTCommon/Frameworks \
+ -F$TempDir/src/VVMainProject/../Pods/RapidNet/Frameworks \
+ -F$TempDir/src/VVMainProject/../Pods/MSFSDK/MSFSDK.xcframework/ios-arm64_armv7 \
+ -F$TempDir/src/VVMainProject/../Pods/QAVFilter \
+ -F$TempDir/src/VVMainProject/../Pods/VVApi \
+ -F$TempDir/src/VVMainProject/../Classes/module/TlibDy/VVLeak \
+ -F$TempDir/src/VVMainProject/../Pods/Rainbow/OOMDetector.xcframework/ios-armv7_arm64 \
+ -F$TempDir/src/VVMainProject/../Pods/Sonic/Sonic.xcframework/ios-armv7_arm64 \
+ -F$TempDir/src/VVMainProject/../Frameworks/SuperResolution \
+ -F$TempDir/src/VVMainProject/../Frameworks/ufa \
+ -F$TempDir/src/VVMainProject/../Pods/libufa \
+ -F$TempDir/src/VVMainProject/../Classes/module/TlibDy/WebP \
+ -F$TempDir/src/VVMainProject/../Pods/Rainbow/Yellow.xcframework/ios-armv7_arm64 \
+ -F$TempDir/src/VVMainProject/../Classes/module/TVSDK/TVHttpProxy/HttpProxy_For_QZone/macosx \
+ -F$TempDir/src/VVMainProject/../Pods/VVReadLitePlayer \
+ -F$TempDir/src/VVMainProject/../Pods/ReadInJoyVideo \
+ -F$TempDir/src/VVMainProject/../Classes/module/VirtualChong \
+ -F$TempDir/src/VVMainProject/../Classes/module/WaterMarkCamera \
+ -F$TempDir/src/VVMainProject/../Classes/VVStory/StoryVideo/DOV/QIMRichMedia/Music/ListenToMusic \
+ -F$TempDir/src/VVMainProject/../Classes/ui/ReadInJoy \
+ -F$TempDir/src/VVMainProject/../Classes/VVStory/Public/TBStoryVideoShare \
+ -F$TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/../Debug-iphonesimulator/ \
+ -F$TempDir/src/VVMainProject/../Frameworks/VVStoryCommon/VVStoryCommon.xcframework/ios-armv7_arm64 \
+ -F$TempDir/src/VVMainProject/../Frameworks/IJKMediaFramework \
+ -F$TempDir/src/VVMainProject/../Pods/iupSDK \
+ -F$TempDir/src/VVMainProject/../Pods/gwnzwngLBS \
+ -F$TempDir/src/VVMainProject/../Pods/gwnzwngLBS/gwnzwngLBS.xcframework/ios-armv7_arm64 \
+ -F$TempDir/src/VVMainProject/../Pods/GroupCommon/GroupCommon.xcframework/ios-armv7_arm64 \
+ -F$TempDir/src/VVMainProject/../Classes/module/TlibDy/Triton/iOS/Debugger \
+ -F$TempDir/src/VVMainProject/../VVMainProject/Submodules/QZone/QZone/Frameworks \
+ -F$TempDir/src/VVMainProject/../Pods/VVRichMediaJpegTools/Frameworks \
+ -F$TempDir/src/VVMainProject/../Pods/VVCommonService/Frameworks \
+ -F$TempDir/src/VVMainProject/../Pods/VVAudioSessionManager/Frameworks \
+ -F$TempDir/src/VVMainProject/../Pods/MetalCNN/MetalCNN.xcframework/ios-armv7_arm64 \
+ -F$TempDir/src/VVMainProject/../Pods/QMapKit \
+ -F$TempDir/src/VVMainProject/../Pods/Rainbow/VVBlue.xcframework/ios-i386_x86_64-simulator \
+ -F$TempDir/src/VVMainProject/../Pods/Rainbow/RainbowUtil.xcframework/ios-i386_x86_64-simulator \
+ -F$TempDir/src/VVMainProject/../Pods/PublicProtocolFiles/PublicProtocolFiles.xcframework/ios-arm64_armv7 \
+ -F$TempDir/src/VVMainProject/../Pods/../Flutter/flutter_engine \
+ -F$TempDir/src/VVMainProject/../CocoaHotReload \
+ -F$TempDir/src/VVMainProject/../Pods/../Flutter/engine \
+ -F$TempDir/src/VVMainProject/../Pods/ThumbPlayer \
+ -F$TempDir/src/VVMainProject/../Pods/DownloadProxyFramework \
+ -F$TempDir/src/VVMainProject/../Pods/BeaconAPI_BaseVV \
+ -F$TempDir/src/VVMainProject/../Pods/MVVKCardKit \
+ -F$TempDir/src/VVMainProject/../Pods/YTFaceExtraFeature \
+ -F$TempDir/src/VVMainProject/../Pods/curl \
+ -F$TempDir/src/VVMainProject/../Pods/TXLiveSDK/TXLiveSDK \
+ -F$TempDir/src/VVMainProject/../Pods/Sonic/Sonic.xcframework/ios-armv7_arm64 \
+ -F$TempDir/src/VVMainProject/../Pods/Sonic/Sonic.xcframework/ios-i386_x86_64-simulator \
+ -F$TempDir/src/VVMainProject/../Pods/VVCode \
+ -F$TempDir/src/VVMainProject/../Pods/Beacon/beacon-frameworks/BeaconAPI_Base \
+ -F$TempDir/src/VVMainProject/../Pods/BeaconAPI_BaseVV/BeaconAPI_BaseVV \
+ -F$TempDir/src/VVMainProject/../Pods/QAVFilterSDK \
+ -F$TempDir/src/VVMainProject/../Pods/beacon \
+ -F$TempDir/src/VVMainProject/../Pods/LightGYAISDK/GYAILib \
+ -F$TempDir/src/VVMainProject/../Pods/romaabtest \
+ -F$TempDir/src/VVMainProject/../Frameworks \
+ -F$TempDir/src/VVMainProject/../Pods/LiveSDK_LiteAudience \
+ -F$TempDir/src/VVMainProject/../Pods/Headers/Public/MVTabBarController \
+ -filelist $TempDir/src/ftest_ios_test_result/Build/Intermediates.noindex/VVMainProject.build/Debug-iphonesimulator/VVMainProject.build/Objects-normal/x86_64/VVMainProject.LinkFileList \
+ -Xlinker \
+ --no-demangle \
+ -install_name @rpath/VVMainProject.framework/VVMainProject \
+ -Xlinker \
+ -rpath \
+ -Xlinker @executable_path/Frameworks \
+ -Xlinker \
+ -rpath \
+ -Xlinker @loader_path/Frameworks \
+ -Xlinker \
+ -rpath \
+ -Xlinker @executable_path/../../Frameworks \
+ -Xlinker \
+ -rpath \
+ -Xlinker @executable_path/Frameworks \
+ -Xlinker \
+ -rpath \
+ -Xlinker @loader_path/Frameworks \
+ -Xlinker \
+ -map \
+ -Xlinker $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/VVMainProject-LinkMap-x86_64.txt \
+ -dead_strip \
+ -Xlinker \
+ -object_path_lto \
+ -Xlinker $TempDir/src/ftest_ios_test_result/Build/Intermediates.noindex/VVMainProject.build/Debug-iphonesimulator/VVMainProject.build/Objects-normal/x86_64/VVMainProject_lto.o \
+ -Xlinker \
+ -no_deduplicate \
+ -Xlinker \
+ -objc_abi_version \
+ -Xlinker 2 \
+ -stdlib\=libc++ \
+ -fobjc-arc \
+ -fobjc-link-runtime \
+ -fprofile-instr-generate \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/LdwLiveSDK/libLdwLiveSDK.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/UploadLib/libUploadLib.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/WeiyunSDK/libWeiyunSDK.a \
+ -force_load $TempDir/src/VVMainProject/../Pods/GLive/libGLive.a \
+ -lAntiRobot \
+ -lBrickEngine \
+ -lCocoaHotReload \
+ -lCommentsPublisher \
+ -lDispatchCatch \
+ -lET \
+ -lExcitingTransfer \
+ -lFLEX \
+ -lGAImage \
+ -lGCDanmuKit \
+ -lGCHybirdComponentKit \
+ -lGCLiveGiftKit \
+ -lGCLivePlayerKit \
+ -lGLive \
+ -lGameContentLiveSDK \
+ -lH5NativeMixView \
+ -lJCEProtocol \
+ -lLGRichTextKit \
+ -lMQZDraftBox \
+ -lMVTabBarController \
+ -lMidasIapSDK4MVV \
+ -lNativeVueSDK \
+ -lLdwLiveSDK \
+ -lPolyPraise \
+ -lQBar \
+ -lQLogSDK \
+ -lQProtobufCodec-iOS9.0 \
+ -lVVCirDataCache \
+ -lVVModelObject \
+ -lVVRelation \
+ -lVVVideoChatModule \
+ -lQRouter \
+ -lQZAR \
+ -lQZLRUImageCache \
+ -lQZPhotoCore \
+ -lQZVideoPlayer \
+ -lQzoneFoundation \
+ -lRAAnnotation \
+ -lRABuiltinServiceAssembly \
+ -lRAFT \
+ -lRIJBaseUtils \
+ -lReportMonitor \
+ -lRightPlayer \
+ -lServiceManager \
+ -lStoryLdwLive \
+ -lTKCSDK \
+ -lTKDContentComponent \
+ -lTKPCommonUtils \
+ -lTKPImagePicker \
+ -lTKPRichTextView \
+ -lTKPSimplifiedYYText \
+ -lTKPVideoCoverImage \
+ -lTKPublisher \
+ -lTNFProtocol \
+ -lTTTReportSDK \
+ -lTitanFeedSDK \
+ -lTuxiaochao \
+ -lUFOSdk \
+ -lUmbreonSDK \
+ -lUploadLib \
+ -lVoiceRecognizeEmbed \
+ -lWXVoiceSDK \
+ -lWeiboSDK \
+ -lWeiyunSDK \
+ -lWezone \
+ -lXVEngine_ios \
+ -lYYModel \
+ -lbrick \
+ -lbz2 \
+ -lc++ \
+ -ldobby \
+ -lgameplay \
+ -lgameplayBusiness \
+ -lhippy \
+ -liCarousel \
+ -lresolv \
+ -lsqlite3 \
+ -lstdc++ \
+ -ltkdad-hippy-sdk \
+ -lz \
+ -framework Accelerate \
+ -framework CFNetwork \
+ -framework ChannelReport \
+ -framework CoreFoundation \
+ -framework CoreGraphics \
+ -framework CoreMedia \
+ -framework CoreServices \
+ -framework CoreTelephony \
+ -framework CoreText \
+ -framework Foundation \
+ -framework GroupCommon \
+ -framework ImageIO \
+ -framework LookinServer \
+ -framework MobileCoreServices \
+ -framework Photos \
+ -framework QuartzCore \
+ -framework Security \
+ -framework StoreKit \
+ -framework SystemConfiguration \
+ -framework UIKit \
+ -framework VideoToolbox \
+ -framework WebKit \
+ -framework libpag \
+ -framework ncnn \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/GAImage/libGAImage.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/GCDanmuKit/libGCDanmuKit.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/GCHybirdComponentKit/libGCHybirdComponentKit.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/GCLiveGiftKit/libGCLiveGiftKit.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/GCLivePlayerKit/libGCLivePlayerKit.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/GameContentLiveSDK/libGameContentLiveSDK.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/JCEProtocol/libJCEProtocol.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/VVModelObject/libVVModelObject.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/VVVideoChatModule/libVVVideoChatModule.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/QzoneFoundation/libQzoneFoundation.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/TKCSDK/libTKCSDK.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/brick/libbrick.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/PolyPraise/libPolyPraise.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/ServiceManager/libServiceManager.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/UmbreonSDK/libUmbreonSDK.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/Wezone/libWezone.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/hippy/libhippy.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/tkdad-hippy-sdk/libtkdad-hippy-sdk.a \
+ -force_load $TempDir/src/VVMainProject/../Pods/../Classes/base/VVRelation/Pod_Framework/libVVRelation.a \
+ -force_load $TempDir/src/VVMainProject/../Pods/QZPhotoCore/ios/libQZPhotoCore.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVMiniApp.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVFlutter.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libReadInJoy.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libAELight.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVWeather.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libgwnzwngDocs.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libWeiyun.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libPublicAccount.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libHonestSay.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libAVGame.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libFullTextSearch.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVGCHippy.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVGameMsg.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVStory.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libPanSocialProtocols.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libInteractiveVideoComm.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libPanSocial.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libiMaxAd.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVTKPublisher.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVBaseUtil.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVCommonUtils.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/VVCommonLog/libVVCommonLog.a \
+ -force_load $TempDir/src/VVMainProject/../Pods/PayCenterSDK/libPayCenterSDK.xcframework/ios-i386_x86_64-simulator/libPayCenterSDK.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libLEGO.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libDiscussGroup.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libQRMTransfer.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libRichMediaBiz.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libLoginSecurityBiz.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVExpression.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libSmartDevice.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libLoginSecurity.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVAIOPhotoBrowser.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVCoupon.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libQZone.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVReader.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/TKPSimplifiedYYText/libTKPSimplifiedYYText.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/TKPublisher/libTKPublisher.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/TKPCommonUtils/libTKPCommonUtils.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/TKPVideoCoverImage/libTKPVideoCoverImage.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/TKPRichTextView/libTKPRichTextView.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/TKPImagePicker/libTKPImagePicker.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVComic.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libContacts.a \
+ -force_load $TempDir/src/VVMainProject/../Pods/GLive/libGLive.a \
+ -force_load $TempDir/src/VVMainProject/../Pods/ILive/libILive.a \
+ -Wl,-rename_section,__TEXT,__cstring,__RODATA,__cstring \
+ -Wl,-rename_section,__TEXT,__const,__RODATA,__const \
+ -Wl,-rename_section,__TEXT,__objc_methname,__RODATA,__objc_methname \
+ -Wl,-rename_section,__TEXT,__objc_classname,__RODATA,__objc_classname \
+ -Wl,-rename_section,__TEXT,__objc_methtype,__RODATA,__objc_methtype \
+ -Wl,-rename_section,__TEXT,__gcc_except_tab,__RODATA,__gcc_except_tab \
+ -lc++abi \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libTribe.a \
+ -force_load $TempDir/src/VVMainProject/../Pods/QMusic/QMusic.xcframework/ios-i386_x86_64-simulator/libQMusic.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/VVPhotoBrowser.framework/VVPhotoBrowser \
+ -force_load $TempDir/src/VVMainProject/../Pods/GroupCommon/GroupCommon.xcframework/ios-i386_x86_64-simulator/GroupCommon.framework/GroupCommon \
+ -force_load $TempDir/src/VVMainProject/../Frameworks/VVStoryCommon/VVStoryCommon.xcframework/ios-x86_64_i386-simulator/VVStoryCommon.framework/VVStoryCommon \
+ -framework Security \
+ -force_load $TempDir/src/VVMainProject/../Pods/Rqd/rqd.xcframework/ios-arm64_x86_64-simulator/librqd.a \
+ -force_load $TempDir/src/VVMainProject/../Pods/PublicProtocolFiles/PublicProtocolFiles.xcframework/ios-arm64_i386_x86_64-simulator/PublicProtocolFiles.framework/PublicProtocolFiles \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/Wezone/libWezone.a \
+ -force_load $TempDir/src/VVMainProject/../Pods/QZPhotoCore/ios/libQZPhotoCore.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/VideoReport/libVideoReport.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/FLEX/libFLEX.a \
+ -force_load $TempDir/src/VVMainProject/../Pods/Weibo_SDK/libWeiboSDK/libWeiboSDK.a \
+ -force_load $TempDir/src/VVMainProject/../Pods/QZAR/libQZAR.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/TNFProtocol/libTNFProtocol.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/TitanFeedSDK/libTitanFeedSDK.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libWezoneIMP.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/QLVideoReportVerify/libQLVideoReportVerify.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/ReportMonitor/libReportMonitor.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/TKDContentComponent/libTKDContentComponent.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/CommentsPublisher/libCommentsPublisher.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/CocoaHotReload/libCocoaHotReload.a \
+ -force_load $TempDir/src/VVMainProject/../Pods/libtxble/libtxble.xcframework/ios-i386_x86_64-simulator/libtxble.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/YYModel/libYYModel.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVMessage.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVSettings.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVRelation.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libYQH.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVGroupBase.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVGroupBiz.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libFullTextSearch.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVWallet.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVShopping.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVGame.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVWebKit.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVOpenConnect.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libDebugFunction.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libAd.a \
+ -force_load $TempDir/src/VVMainProject/../Pods/Ana/ana.xcframework/ios-i386_x86_64-simulator/libana.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/VVAIOFrame.framework/VVAIOFrame \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/VVAIOBiz.framework/VVAIOBiz \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVRecentMsgList.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libFileAssist.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libFriendSelector.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVASMaterial.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libGroupFile.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libNearFile.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libOfflineFile.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libUFTTransfer.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/RABuiltinServiceAssembly/libRABuiltinServiceAssembly.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/Tuxiaochao/libTuxiaochao.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libMassBlessing.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libDrawer.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libRecommend.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libFaceIdentify.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libWeSee.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVASDubhe.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libCMShow.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVASLive.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVFavorite.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVScan.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVSport.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVASAssistor.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVUIFramework.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libgwnzwngQidian.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVAV.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVASPay.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVASVip.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVark.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libFriendSelectorBiz.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libHonestSay.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libAVGame.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libFullTextSearch.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libQFileEngine.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/PolyPraise/libPolyPraise.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/UmbreonSDK/libUmbreonSDK.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVMessageModel.a \
+ -force_load $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/VVCommonLog/libVVCommonLog.a $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libQFileEngine.a $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libPanSocialProtocols.a $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVMessageModel.a $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVBaseUtil.a $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libTribe.a $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVWebKit.a $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libInteractiveVideoComm.a $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVComic.a $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVWeather.a $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libWezoneIMP.a $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVASPay.a $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libPanSocial.a $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVASVip.a $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVUIFramework.a $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVASAssistor.a $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVSport.a $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVASLive.a $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libCMShow.a $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVASDubhe.a $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libQZone.a $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libRecommend.a $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libDrawer.a $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libFaceIdentify.a $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVRelation.a $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libGroupFile.a $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libNearFile.a $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVASMaterial.a $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libSmartDevice.a $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVOpenConnect.a $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVExpression.a $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libgwnzwngDocs.a $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libAd.a $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libLoginSecurityBiz.a $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libLoginSecurity.a $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libQRMTransfer.a $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVMessage.a $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVWallet.a \
+ -framework AppTrackingTransparency \
+ -lTuringShield \
+ -framework Security \
+ -framework CoreTelephony \
+ -lsqlite3 \
+ -lc++ \
+ -framework ReplayKit \
+ -lz \
+ -framework PhotosUI $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVGroupBase.a \
+ -lCharcsFramework \
+ -framework PublicProtocolFiles \
+ -framework ContactsUI \
+ -framework GroupCommon \
+ -framework Contacts \
+ -weak_framework JavaScriptCore \
+ -framework CoreML \
+ -framework TlibDy \
+ -weak_framework Network \
+ -weak_framework UserNotifications \
+ -framework gwnzwngLBS \
+ -lana \
+ -framework MapKit \
+ -weak_framework Metal \
+ -weak_framework MetalPerformanceShaders \
+ -weak_framework MetalKit \
+ -weak_framework WatchConnectivity \
+ -licucore $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libiMaxAd.a \
+ -framework MobileCoreServices \
+ -framework MediaPlayer \
+ -framework OpenGLES \
+ -weak_framework CoreTelephony \
+ -weak_framework CoreVideo \
+ -weak_framework CoreMedia \
+ -weak_framework CoreAudio $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVRecentMsgList.a \
+ -weak_framework QuartzCore \
+ -framework MessageUI \
+ -lbeacon \
+ -framework AddressBookUI \
+ -weak_framework CoreLocation \
+ -lsqlite3 \
+ -framework SystemConfiguration \
+ -framework CFNetwork \
+ -framework AddressBook \
+ -framework CoreGraphics \
+ -weak_framework UIKit \
+ -framework libpag \
+ -lz \
+ -weak_framework ImageIO \
+ -framework CoreMotion \
+ -framework Foundation \
+ -liconv \
+ -weak_framework CoreImage \
+ -framework andromeda \
+ -framework Accelerate \
+ -framework StoreKit \
+ -weak_framework AdSupport \
+ -framework CoreText \
+ -framework CoreData \
+ -lxml2.2 \
+ -weak_framework CoreFoundation $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libVVGroupBiz.a $TempDir/src/Pods/gwnzwngLBS/stat.a \
+ -framework GLKit \
+ -weak_framework EventKit \
+ -lresolv \
+ -weak_framework Photos \
+ -framework LocalAuthentication \
+ -framework MultipeerConnectivity \
+ -framework opencv2 $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libWeiyun.a \
+ -lbz2.1.0 \
+ -framework HealthKit \
+ -framework CoreBluetooth \
+ -weak_framework AVFoundation $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libDebugFunction.a \
+ -weak_framework CoreSpotlight $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libLEGO.a \
+ -weak_framework VideoToolbox \
+ -framework PushKit \
+ -weak_framework IntentsUI \
+ -weak_framework Intents \
+ -framework OpenAL \
+ -framework Social \
+ -lc++ \
+ -framework AVKit \
+ -framework SpriteKit \
+ -framework WebKit \
+ -framework SceneKit \
+ -weak_framework ARKit \
+ -framework VVStoryCommon $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libDiscussGroup.a $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/libQGWJSON.a \
+ -lVVRetainCycleDetector \
+ -lPods-VVMainProject \
+ -Xlinker \
+ -no_adhoc_codesign \
+ -compatibility_version 1 \
+ -current_version 1 \
+ -Xlinker \
+ -dependency_info \
+ -Xlinker $TempDir/src/ftest_ios_test_result/Build/Intermediates.noindex/VVMainProject.build/Debug-iphonesimulator/VVMainProject.build/Objects-normal/x86_64/VVMainProject_dependency_info.dat \
+ -o $TempDir/src/ftest_ios_test_result/Build/Products/Debug-iphonesimulator/VVMainProject.framework/VVMainProject \
