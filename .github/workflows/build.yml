@@ -18,6 +18,6 @@ jobs:
       - name: check Xcode version
         run: xcodebuild -version
       - name: expect result
-        run: ./build.sh $(./stub.sh /abc) 2>&1 | tail -n 3
+        run: ./build.sh $(./stub.sh /abc)
       - name: actual result
-        run: ./build.sh $(./stub.sh /workspace/p-a40c117861104f0aa2e5831e9f5c93d1) 2>&1 | tail -n 3
+        run: ./build.sh $(./stub.sh /workspace/p-a40c117861104f0aa2e5831e9f5c93d1)
